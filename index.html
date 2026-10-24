@@ -3,70 +3,282 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PrayerSeed — Personalised prayers & bedtime stories for your children</title>
-  <meta name="description" content="PrayerSeed helps parents cover their children in prayer every day, with personalised prayers and faith-filled bedtime stories woven with Scripture." />
+  <title>PrayerSeed – Prayer App for Kids & Bedtime Bible Stories</title>
+  <meta name="description" content="Personalised daily prayers and Bible bedtime stories for each of your children, by name and age. Free to download — 7-day free trial on iOS &amp; Android." />
+  <link rel="canonical" href="https://www.prayerseed.app/" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#0D1B2A" />
+  <meta name="apple-itunes-app" content="app-id=6774805159" />
+
+  <!-- Social sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="PrayerSeed" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:url" content="https://www.prayerseed.app/" />
+  <meta property="og:title" content="PrayerSeed – Prayer App for Kids & Bedtime Bible Stories" />
+  <meta property="og:description" content="Personalised daily prayers and Scripture-woven bedtime stories for each of your children. Free 7-day trial on iOS & Android." />
+  <meta property="og:image" content="https://www.prayerseed.app/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="PrayerSeed app — cover your children in prayer, every single day" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PrayerSeed – Prayer App for Kids & Bedtime Bible Stories" />
+  <meta name="twitter:description" content="Personalised daily prayers and Scripture-woven bedtime stories for each of your children. Free 7-day trial on iOS & Android." />
+  <meta name="twitter:image" content="https://www.prayerseed.app/og-image.jpg" />
+
+  <!-- Icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.prayerseed.app/#organization",
+        "name": "PrayerSeed",
+        "url": "https://www.prayerseed.app/",
+        "logo": { "@type": "ImageObject", "url": "https://www.prayerseed.app/icon-512.png", "width": 512, "height": 512 },
+        "email": "support@prayerseed.app",
+        "contactPoint": { "@type": "ContactPoint", "contactType": "customer support", "email": "support@prayerseed.app", "url": "https://www.prayerseed.app/support" }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.prayerseed.app/#website",
+        "url": "https://www.prayerseed.app/",
+        "name": "PrayerSeed",
+        "publisher": { "@id": "https://www.prayerseed.app/#organization" },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.prayerseed.app/#webpage",
+        "url": "https://www.prayerseed.app/",
+        "name": "PrayerSeed – Prayer App for Kids & Bedtime Bible Stories",
+        "description": "Personalised daily prayers and Bible bedtime stories for each of your children, by name and age.",
+        "isPartOf": { "@id": "https://www.prayerseed.app/#website" },
+        "about": { "@id": "https://www.prayerseed.app/#app" },
+        "primaryImageOfPage": { "@type": "ImageObject", "url": "https://www.prayerseed.app/og-image.jpg", "width": 1200, "height": 630 },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "MobileApplication",
+        "@id": "https://www.prayerseed.app/#app",
+        "name": "PrayerSeed",
+        "alternateName": "PrayerSeed – Personalised prayers & bedtime stories for your children",
+        "description": "PrayerSeed helps parents nurture their children's faith every day with personalised morning, midday and night prayers and Scripture-woven bedtime stories, created around each child's name, age and heart.",
+        "url": "https://www.prayerseed.app/",
+        "image": "https://www.prayerseed.app/icon-512.png",
+        "applicationCategory": "LifestyleApplication",
+        "applicationSubCategory": "Religion & Spirituality",
+        "operatingSystem": "iOS 15.1 or later, Android",
+        "contentRating": "4+",
+        "inLanguage": "en",
+        "isFamilyFriendly": true,
+        "audience": { "@type": "PeopleAudience", "audienceType": "Christian parents and families" },
+        "author": { "@id": "https://www.prayerseed.app/#organization" },
+        "publisher": { "@id": "https://www.prayerseed.app/#organization" },
+        "downloadUrl": "https://apps.apple.com/gb/app/prayerseed/id6774805159",
+        "installUrl": "https://play.google.com/store/apps/details?id=com.prayerseed.app",
+        "sameAs": [
+          "https://apps.apple.com/gb/app/prayerseed/id6774805159",
+          "https://play.google.com/store/apps/details?id=com.prayerseed.app"
+        ],
+        "offers": [
+          { "@type": "Offer", "name": "Free", "price": "0", "priceCurrency": "GBP", "category": "free", "description": "Daily personalised prayers and 3 personalised bedtime stories per month." },
+          { "@type": "Offer", "name": "PrayerSeed+", "category": "subscription", "description": "Unlimited prayers and stories, all Bible translations, family and milestone prayers, audio narration. 7-day free trial." }
+        ],
+        "featureList": [
+          "Personalised morning, midday and night prayers for each child",
+          "Scripture-woven bedtime stories with a verse and closing prayer",
+          "Profiles for every child",
+          "Multiple Bible translations and weekly virtue themes",
+          "Family prayer streaks and milestones",
+          "Home-screen widgets with the daily verse and reminders"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.prayerseed.app/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is PrayerSeed?",
+            "acceptedAnswer": { "@type": "Answer", "text": "PrayerSeed is a prayer app for Christian parents. It creates personalised morning, midday and night prayers and Bible-based bedtime stories for each of your children, using their name, age and what they're going through — so praying for your kids becomes a simple daily habit." }
+          },
+          {
+            "@type": "Question",
+            "name": "What ages is PrayerSeed for?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Parents use PrayerSeed for children from babies and toddlers through to teens. Every prayer and bedtime story is written for your child's age, so a prayer for a three-year-old reads very differently from one for a thirteen-year-old." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is PrayerSeed free?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. PrayerSeed is free to download and free accounts include daily prayers and 3 personalised bedtime stories a month. PrayerSeed+ unlocks unlimited prayers and stories, all Bible translations, family and milestone prayers and audio narration, with a 7-day free trial you can cancel any time." }
+          },
+          {
+            "@type": "Question",
+            "name": "Are the prayers and stories based on the Bible?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every prayer and bedtime story is woven with Scripture and comes with a Bible verse. You can choose from multiple Bible translations and follow weekly virtue themes such as kindness, courage and gratitude." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use it for more than one child?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Add a profile for each of your children and every prayer and story is created just for them. Co-parents can share a child's profile so the whole family prays together." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is my family's information private?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. We never sell your data, and you can export or permanently delete your account and your children's profiles from inside the app at any time. See our Privacy Policy for full details." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="/">🌱 PrayerSeed</a>
-      <nav class="nav">
+      <a class="brand" href="/" aria-label="PrayerSeed home">🌱 PrayerSeed</a>
+      <nav class="nav" aria-label="Primary">
         <a href="/#features">Features</a>
+        <a class="nav-extra" href="/#how-it-works">How it works</a>
+        <a class="nav-extra" href="/#faq">FAQ</a>
         <a href="/support">Support</a>
-        <a href="/privacy">Privacy</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="wrap">
-      <span class="badge">✦ Faith · Family · Every day</span>
-      <h1>Cover your children in prayer, every single day.</h1>
-      <p class="lead">PrayerSeed creates personalised prayers and faith-filled bedtime stories for your child — woven with Scripture and tailored to their name, age and heart.</p>
-      <div class="store-buttons">
-        <a class="store-btn" href="https://apps.apple.com/gb/app/prayerseed/id6774805159" aria-label="Download on the App Store">
-          <svg class="store-btn__ic" viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
-          <span class="store-btn__txt"><small>Download on the</small><strong>App Store</strong></span>
-        </a>
-        <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.prayerseed.app" aria-label="Get it on Google Play">
-          <svg class="store-btn__ic" viewBox="0 0 512 512" aria-hidden="true"><path fill="#00D3FF" d="M47 32C36 38 29 49 29 65v382c0 16 7 27 18 33l223-224z"/><path fill="#00F076" d="M375 241 90 32c-13-9-27-9-38-1l224 223z"/><path fill="#FFC900" d="m460 289 63-36c19-11 19-40 0-51l-63-37-71 71z"/><path fill="#FF3A44" d="m276 254-224 226c11 8 25 8 38-1l285-209z"/></svg>
-          <span class="store-btn__txt"><small>Get it on</small><strong>Google Play</strong></span>
-        </a>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap">
+        <span class="badge">✦ Faith · Family · Every day</span>
+        <h1 id="hero-title">Cover your children in prayer, every single day.</h1>
+        <p class="lead">PrayerSeed is a prayer app for Christian parents. It creates personalised prayers and Bible bedtime stories for each child — woven with Scripture and tailored to their name, age and heart.</p>
+        <div class="store-buttons">
+          <a class="store-btn" href="https://apps.apple.com/gb/app/prayerseed/id6774805159" aria-label="Download PrayerSeed on the App Store">
+            <svg class="store-btn__ic" viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+            <span class="store-btn__txt"><small>Download on the</small><strong>App Store</strong></span>
+          </a>
+          <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.prayerseed.app&amp;referrer=utm_source%3Dprayerseed.app%26utm_medium%3Dweb%26utm_campaign%3Dlanding" aria-label="Get PrayerSeed on Google Play">
+            <svg class="store-btn__ic" viewBox="0 0 512 512" aria-hidden="true"><path fill="#00D3FF" d="M47 32C36 38 29 49 29 65v382c0 16 7 27 18 33l223-224z"/><path fill="#00F076" d="M375 241 90 32c-13-9-27-9-38-1l224 223z"/><path fill="#FFC900" d="m460 289 63-36c19-11 19-40 0-51l-63-37-71 71z"/><path fill="#FF3A44" d="m276 254-224 226c11 8 25 8 38-1l285-209z"/></svg>
+            <span class="store-btn__txt"><small>Get it on</small><strong>Google Play</strong></span>
+          </a>
+        </div>
+        <span class="cta-note">Free to download · 7-day free trial of PrayerSeed+ · Cancel anytime</span>
+        <div class="verse">
+          <em>"Train up a child in the way he should go; even when he is old he will not depart from it."</em>
+          <span>Proverbs 22:6</span>
+        </div>
       </div>
-      <span class="cta-note">7-day free trial · Cancel anytime</span>
-      <div class="verse">
-        <em>"Train up a child in the way he should go; even when he is old he will not depart from it."</em>
-        <span>Proverbs 22:6</span>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="features">
-    <div class="wrap">
-      <h2>Everything you need to nurture faith at home</h2>
-      <p class="sub">Simple, beautiful and built around your family's daily rhythm of prayer.</p>
-      <div class="features">
-        <div class="feature"><div class="ic">🙏</div><h3>Personalised prayers</h3><p>Morning, midday and night prayers created just for each child — by name, age and the things they're walking through.</p></div>
-        <div class="feature"><div class="ic">🌙</div><h3>Bedtime stories</h3><p>Faith-filled, Scripture-woven bedtime stories personalised to your child, with a verse and a closing prayer.</p></div>
-        <div class="feature"><div class="ic">📖</div><h3>Rooted in Scripture</h3><p>Choose from multiple Bible translations, with weekly virtue themes to grow character and faith.</p></div>
-        <div class="feature"><div class="ic">🔥</div><h3>Prayer streaks</h3><p>Build a consistent habit together and celebrate milestones as your family grows in prayer.</p></div>
-        <div class="feature"><div class="ic">👨‍👩‍👧</div><h3>For every child</h3><p>Add each of your children with their own profile, so every prayer and story is truly theirs.</p></div>
-        <div class="feature"><div class="ic">📲</div><h3>Home-screen widgets</h3><p>Keep your daily verse, streak and prayer reminders one glance away on your phone.</p></div>
+    <section id="features" aria-labelledby="features-title">
+      <div class="wrap">
+        <h2 id="features-title">Everything you need to nurture faith at home</h2>
+        <p class="sub">Simple, beautiful and built around your family's daily rhythm of prayer.</p>
+        <div class="features">
+          <div class="feature"><div class="ic" aria-hidden="true">🙏</div><h3>Personalised prayers for kids</h3><p>Morning, midday and night prayers created just for each child — by name, age and the things they're walking through.</p></div>
+          <div class="feature"><div class="ic" aria-hidden="true">🌙</div><h3>Bible bedtime stories</h3><p>Faith-filled, Scripture-woven bedtime stories personalised to your child, with a verse and a closing prayer.</p></div>
+          <div class="feature"><div class="ic" aria-hidden="true">📖</div><h3>Rooted in Scripture</h3><p>Choose from multiple Bible translations, with weekly virtue themes to grow character and faith.</p></div>
+          <div class="feature"><div class="ic" aria-hidden="true">🔥</div><h3>Family prayer streaks</h3><p>Build a consistent habit together and celebrate milestones as your family grows in prayer.</p></div>
+          <div class="feature"><div class="ic" aria-hidden="true">👨‍👩‍👧</div><h3>A profile for every child</h3><p>Add each of your children with their own profile, so every prayer and story is truly theirs — and share it with a co-parent.</p></div>
+          <div class="feature"><div class="ic" aria-hidden="true">📲</div><h3>Home-screen widgets</h3><p>Keep your daily verse, streak and prayer reminders one glance away on your phone.</p></div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section id="how-it-works" class="alt" aria-labelledby="how-title">
+      <div class="wrap">
+        <h2 id="how-title">How PrayerSeed works</h2>
+        <p class="sub">Three minutes to set up. A lifetime of prayer over your children.</p>
+        <ol class="steps">
+          <li><span class="step-n">1</span><h3>Add your child</h3><p>Their name, age and a few words about what they're going through right now — a new school, a big feeling, a friendship.</p></li>
+          <li><span class="step-n">2</span><h3>Pray together, three times a day</h3><p>Open a morning, midday or night prayer written for them. Read it aloud, or let PrayerSeed+ narrate it.</p></li>
+          <li><span class="step-n">3</span><h3>End the day with a bedtime story</h3><p>A short, Scripture-woven story starring your child, with a Bible verse and a closing prayer to settle them to sleep.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="who" aria-labelledby="who-title">
+      <div class="wrap narrow">
+        <h2 id="who-title">Made for Christian parents who want prayer to be a daily habit</h2>
+        <p class="sub">Whether you're praying over a newborn, settling a toddler at bedtime, or covering a teenager through exams, PrayerSeed meets your child where they are.</p>
+        <div class="pillars">
+          <div class="pillar"><h3>For busy mornings</h3><p>A short, specific prayer for the day ahead — no blank page, no searching for words.</p></div>
+          <div class="pillar"><h3>For bedtime routines</h3><p>Replace the scramble for a story with one that's about <em>your</em> child and points them to Jesus.</p></div>
+          <div class="pillar"><h3>For the whole family</h3><p>Shared profiles for co-parents, family and milestone prayers, and streaks you build together.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="alt" aria-labelledby="faq-title">
+      <div class="wrap narrow">
+        <h2 id="faq-title">Frequently asked questions</h2>
+        <p class="sub">Everything parents ask before downloading.</p>
+        <div class="faq">
+          <details open>
+            <summary><h3>What is PrayerSeed?</h3></summary>
+            <p>PrayerSeed is a prayer app for Christian parents. It creates personalised morning, midday and night prayers and Bible-based bedtime stories for each of your children, using their name, age and what they're going through — so praying for your kids becomes a simple daily habit.</p>
+          </details>
+          <details>
+            <summary><h3>What ages is PrayerSeed for?</h3></summary>
+            <p>Parents use PrayerSeed for children from babies and toddlers through to teens. Every prayer and bedtime story is written for your child's age, so a prayer for a three-year-old reads very differently from one for a thirteen-year-old.</p>
+          </details>
+          <details>
+            <summary><h3>Is PrayerSeed free?</h3></summary>
+            <p>Yes. PrayerSeed is free to download and free accounts include daily prayers and 3 personalised bedtime stories a month. PrayerSeed+ unlocks unlimited prayers and stories, all Bible translations, family and milestone prayers and audio narration, with a 7-day free trial you can cancel any time.</p>
+          </details>
+          <details>
+            <summary><h3>Are the prayers and stories based on the Bible?</h3></summary>
+            <p>Yes. Every prayer and bedtime story is woven with Scripture and comes with a Bible verse. You can choose from multiple Bible translations and follow weekly virtue themes such as kindness, courage and gratitude.</p>
+          </details>
+          <details>
+            <summary><h3>Can I use it for more than one child?</h3></summary>
+            <p>Yes. Add a profile for each of your children and every prayer and story is created just for them. Co-parents can share a child's profile so the whole family prays together.</p>
+          </details>
+          <details>
+            <summary><h3>Is my family's information private?</h3></summary>
+            <p>Yes. We never sell your data, and you can export or permanently delete your account and your children's profiles from inside the app at any time. See our <a href="/privacy">Privacy Policy</a> for full details.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta" aria-labelledby="cta-title">
+      <div class="wrap">
+        <h2 id="cta-title">Start praying over your children today</h2>
+        <p class="sub light">Free to download. Your first personalised prayer takes less than a minute.</p>
+        <div class="store-buttons">
+          <a class="store-btn" href="https://apps.apple.com/gb/app/prayerseed/id6774805159" aria-label="Download PrayerSeed on the App Store">
+            <svg class="store-btn__ic" viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+            <span class="store-btn__txt"><small>Download on the</small><strong>App Store</strong></span>
+          </a>
+          <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.prayerseed.app&amp;referrer=utm_source%3Dprayerseed.app%26utm_medium%3Dweb%26utm_campaign%3Dlanding-footer" aria-label="Get PrayerSeed on Google Play">
+            <svg class="store-btn__ic" viewBox="0 0 512 512" aria-hidden="true"><path fill="#00D3FF" d="M47 32C36 38 29 49 29 65v382c0 16 7 27 18 33l223-224z"/><path fill="#00F076" d="M375 241 90 32c-13-9-27-9-38-1l224 223z"/><path fill="#FFC900" d="m460 289 63-36c19-11 19-40 0-51l-63-37-71 71z"/><path fill="#FF3A44" d="m276 254-224 226c11 8 25 8 38-1l285-209z"/></svg>
+            <span class="store-btn__txt"><small>Get it on</small><strong>Google Play</strong></span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer class="site-footer">
     <div class="wrap">
-      <a class="brand" href="/">🌱 PrayerSeed</a>
-      <nav>
+      <a class="brand" href="/" aria-label="PrayerSeed home">🌱 PrayerSeed</a>
+      <nav aria-label="Footer">
         <a href="/support">Support</a>
         <a href="/privacy">Privacy Policy</a>
         <a href="/terms">Terms</a>
+        <a href="mailto:support@prayerseed.app">Contact</a>
       </nav>
       <div class="copy">© 2026 PrayerSeed. Made with faith for families everywhere.</div>
     </div>

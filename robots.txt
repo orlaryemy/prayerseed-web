@@ -1,0 +1,6 @@
+# https://www.prayerseed.app
+User-agent: *
+Allow: /
+Disallow: /delete-account
+
+Sitemap: https://www.prayerseed.app/sitemap.xml
